@@ -2,7 +2,7 @@ import React from 'react';
 import KPText from '../Images/KP.png';
 import PortfolioText from '../Images/Portfolio.png';
 
-export default function Header({ activeLink, onLinkClick }) {
+export default function Navigation({ activeLink, onLinkClick }) {
     
     return (
         <div className="Header-Container">

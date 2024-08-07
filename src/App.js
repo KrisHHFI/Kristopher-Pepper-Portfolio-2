@@ -7,10 +7,10 @@ import './StyleSheets/Products.css';
 import './StyleSheets/About.css';
 import './StyleSheets/Contact.css';
 // Components
-import Header from './Components/Header';
-import Products from './Components/Products/Products';
-import About from './Components//About/About';
-import Contact from './Components/Contact';
+import Navigation from './Components/Navigation';
+import Products from './Components/Coding/Products';
+import About from './Components/Photography/About';
+import Contact from './Components/About';
 
 function App() {
   const [activeLink, setActiveLink] = useState('Products');
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="Wrapper">
-      <Header activeLink={activeLink} onLinkClick={handleLinkClick} />
+      <Navigation activeLink={activeLink} onLinkClick={handleLinkClick} />
       <div className="Content-Container">
         {renderContent()}
       </div>
