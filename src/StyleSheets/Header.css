@@ -46,12 +46,12 @@
     width: 100%;
 }
 
-.CompanyLogo {
+.KPText {
     min-width: 60px;
     width: 30%;
 }
 
-.CompanyText {
+.PortfolioText {
     width: 40%;
 }
 
@@ -81,17 +81,17 @@
 }
 
 .Nav-Item:hover {
-    color: rgb(37, 129, 28);
+    color: red;
 }
 
 .active {
-    background-color: rgb(37, 129, 28);
+    background-color: black;
     border-radius: 15px;
     color: White;
     font-weight: bold;
 }
 
 .active:hover {
-    background-color: rgb(28, 100, 22);
+    background-color: red;
     color: White;
 }
