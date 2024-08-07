@@ -1,0 +1,72 @@
+.Contact-Container {
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+}
+
+.Contact-Form-Container {
+    display: flex;
+    justify-content: center;
+}
+
+.Contact-Form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 75%;
+}
+
+.Contact-Form-Title {
+    height: 80px;
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+}
+
+.Contact-Form input {
+    border: transparent;
+    border-bottom: 2px solid gray;
+    height: 30px;
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+.Contact-Form textarea {
+    border: transparent;
+    border-bottom: 2px solid gray;
+    height: 100px;
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+.CheckBoxContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+}
+
+.CheckBoxContainer input {
+    flex: 1;
+}
+
+.CheckBoxContainer label {
+    flex: 3;
+}
+
+.Contact-Form-Button {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 15px 0 30px 0;
+    padding: 8px 25px 8px 25px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  .Contact-Form-Button:hover {
+    font-weight: bold;
+  }

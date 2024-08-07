@@ -1,0 +1,6 @@
+.Content-Container{
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}

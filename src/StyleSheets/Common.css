@@ -1,0 +1,25 @@
+.Wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Burger nav appears*/
+@media screen and (max-width: 900px) {
+  .Wrapper {
+      flex-direction: column;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.CoverImage {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}

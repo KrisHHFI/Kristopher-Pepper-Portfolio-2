@@ -1,0 +1,123 @@
+.About-Container {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: -2;
+}
+
+.About-Item {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px
+}
+
+.AboutImageTitle {
+    height: 80px;
+    margin-left: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.About-Text-Title {
+    font-size: 22px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.About-Text-Box {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    justify-content: center;
+    margin: 0 40px 20px 40px;
+    padding: 10px 40px 10px 40px;
+    position: absolute;
+    text-align: center;
+    width: calc(100% - 160px);
+}
+
+.About-Item-2-Container {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    justify-items: center;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.About-Item-2 {
+    align-items: center;
+    border-left: 1px solid black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    margin: 10px 40px 30px 40px;
+    min-width: 100px;
+}
+
+.About-Item-2-Number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.About-Item-2-Text {
+    font-size: 18px;
+}
+
+.About-Item-3 {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    min-height: 0 !important;
+}
+
+.About-Item-3-Text-Box {
+    position: relative;
+}
+
+.About-Stats-Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Burger nav appears*/
+@media screen and (max-width: 900px) {
+    .About-Text-Box {
+        position: relative;
+        margin-bottom: 0 0 20px 0;
+    }
+
+    .About-Text-Box {
+        height: fit-content;
+        width: calc(90% - 80px);
+    }
+
+    .About-Item {
+        justify-content: center;
+        height: fit-content;
+        flex-direction: column;
+        min-height: 400px;
+    }
+
+    .AboutImageTitle {
+        margin: 0;
+        position: relative;
+    }
+
+    .About-Item-2-Container {
+        min-height: 0;
+        padding-top: 0;
+    }
+}

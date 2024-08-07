@@ -1,0 +1,97 @@
+.Header-Container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: calc(100vh - 30px);
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Burger nav appears*/
+@media screen and (max-width: 900px) {
+    .Header-Container {
+        position: relative;
+        flex-direction: row;
+        height: fit-content;
+        padding: 10px 7px 10px 5px 
+    }
+
+    .hidden {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Header-Item-1 {
+        flex: 1;
+    }
+
+    .Header-Item-3 {
+        flex: 4;
+    }
+
+    .Nav-Bar {
+        margin: 0 !important;
+        height: 40px;
+        align-items: center;
+        width: 100% !important;
+    }
+}
+
+.Header-Item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.CompanyLogo {
+    min-width: 60px;
+    width: 30%;
+}
+
+.CompanyText {
+    width: 40%;
+}
+
+.Nav-Bar {
+    background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+    display: flex;
+    font-size: 17px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.Nav-Item {
+    text-align: center;
+    width: inherit;
+}
+
+.Nav-Item a {
+    color: inherit;
+    display: inline-block;
+    padding: 7px 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.Nav-Item:hover {
+    color: rgb(37, 129, 28);
+}
+
+.active {
+    background-color: rgb(37, 129, 28);
+    border-radius: 15px;
+    color: White;
+    font-weight: bold;
+}
+
+.active:hover {
+    background-color: rgb(28, 100, 22);
+    color: White;
+}
