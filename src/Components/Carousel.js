@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const Carousel = ({ imageSources = {}, carouselTitle }) => {
+const Carousel = ({ imageSources = {}, carouselTitle, noArrows }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -17,9 +17,9 @@ const Carousel = ({ imageSources = {}, carouselTitle }) => {
   return (
     <div>
       <div className={`carouselContainer`}>
-      {carouselTitle && <div className="carouselTitle">{carouselTitle}</div>}
+        {carouselTitle && <div className="carouselTitle">{carouselTitle}</div>}
 
-        {images.length > 1 && (
+        {!noArrows && images.length > 1 && (
           <img
             src={ComponentImageSources.leftArrow}
             alt="Left Arrow"
@@ -32,7 +32,7 @@ const Carousel = ({ imageSources = {}, carouselTitle }) => {
         ) : (
           <p>No images available</p>
         )}
-        {images.length > 1 && (
+        {!noArrows && images.length > 1 && (
           <img
             src={ComponentImageSources.rightArrow}
             alt="Right Arrow"
@@ -48,13 +48,15 @@ const Carousel = ({ imageSources = {}, carouselTitle }) => {
 Carousel.propTypes = {
   imageSources: PropTypes.object,
   hasSplitLayout: PropTypes.bool,
-  carouselTitle: PropTypes.string
+  carouselTitle: PropTypes.string,
+  noArrows: PropTypes.bool
 };
 
 Carousel.defaultProps = {
   imageSources: {},
   hasSplitLayout: false,
-  carouselTitle: ''
+  carouselTitle: '',
+  noArrows: false
 };
 
 export default Carousel;
