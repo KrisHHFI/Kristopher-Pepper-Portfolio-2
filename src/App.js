@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Stylesheets
 import './StyleSheets/Common.css';
-import './StyleSheets/Header.css';
+import './StyleSheets/Styling.css';
 import './StyleSheets/Content.css';
 import './StyleSheets/Products.css';
 import './StyleSheets/About.css';
@@ -9,7 +9,7 @@ import './StyleSheets/Contact.css';
 // Components
 import Navigation from './Components/Navigation';
 import Coding from './Components/Coding/CodingPage';
-import Photography from './Components/Photography/PhotographPage';
+import Photography from './Components/Photography/PhotographyPage';
 import About from './Components/About/About';
 
 function App() {

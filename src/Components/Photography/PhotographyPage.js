@@ -10,6 +10,10 @@ import WhatWeDo from '../../Images/About/WhatWeDo.png';
 import Office from '../../Images/About/Office.png';
 import OurStory from '../../Images/About/OurStory.png';
 
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources } from '../../Constants/ImageSources';
+import Carousel from '../Carousel';
+
+
 export default function About() {
     const titleText1 = `Tempor incididunt ut labore!`;
     const text1 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -29,8 +33,14 @@ export default function About() {
     const AboutItem2Number4 = `16`;
     const AboutItem2Text4 = `Awards`;
 
+
+
     return (
         <div class="About-Container">
+            <Carousel
+                imageSources={BWPortraitImageSources}
+            />
+
             <AboutItem
                 coverImage={OfficeInterior}
                 titleImage={Who}
@@ -51,7 +61,7 @@ export default function About() {
             />
             <div class="About-Item About-Item-2-Container">
                 <img src={OurStory} alt="Our Story Title" className="AboutImageTitle" />
-                <div class = "About-Stats-Container">
+                <div class="About-Stats-Container">
                     <AboutItem2
                         AboutItem2Number={AboutItem2Number}
                         AboutItem2Text={AboutItem2Text}
