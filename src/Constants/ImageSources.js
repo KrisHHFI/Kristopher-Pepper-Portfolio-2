@@ -7,7 +7,6 @@ import band6 from '../Assets/Images/Band6.jpg';
 import band7 from '../Assets/Images/Band7.jpg';
 import band8 from '../Assets/Images/Band8.jpg';
 import band9 from '../Assets/Images/Band9.jpg';
-import band10 from '../Assets/Images/Band10.jpg';
 import bw1 from '../Assets/Images/BW1.jpg';
 import bw2 from '../Assets/Images/BW2.jpg';
 import bw3 from '../Assets/Images/BW3.jpg';
@@ -79,8 +78,8 @@ export const BandImageSources = {
     band7,
     band8,
     band9,
-    band10,
 };
+
 
 export const ComponentImageSources = {
     GitHub,

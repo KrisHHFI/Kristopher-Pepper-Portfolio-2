@@ -40,7 +40,12 @@ export default function About() {
             <Carousel
                 imageSources={BWPortraitImageSources}
             />
-
+            <Carousel
+                imageSources={ColourPortraitSources}
+            />
+            <Carousel
+                imageSources={BandImageSources}
+            />
             <AboutItem
                 coverImage={OfficeInterior}
                 titleImage={Who}
