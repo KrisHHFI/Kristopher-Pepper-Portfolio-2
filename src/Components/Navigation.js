@@ -5,22 +5,22 @@ import PortfolioText from '../Images/Portfolio.png';
 export default function Navigation({ activeLink, onLinkClick }) {
     
     return (
-        <div className="Header-Container">
-            <div className="Header-Item-1 Header-Item">
-                <img src={KPText} alt="Company Logo" className="KPText" />
+        <div className="Navigation-Container">
+            <div className="Navigation-Child-1 Navigation-Child">
+                <img src={KPText} alt="Company Logo" className="Navigation-KPText" />
             </div>
-            <div className="Header-Item hidden">
-                <img src={PortfolioText} alt="Company Text" className="PortfolioText" />
+            <div className="Navigation-Child Navigation-Child-Hidden">
+                <img src={PortfolioText} alt="Company Text" className="Navigation-PortfolioText" />
             </div>
-            <div className="Header-Item-3 Header-Item">
-                <div className="Nav-Bar">
-                    <div className={`Nav-Item ${activeLink === 'Coding' ? 'active' : ''}`}>
+            <div className="Navigation-Child-3 Navigation-Child">
+                <div className="Navigation-Item-Container">
+                    <div className={`Navigation-Child-Item ${activeLink === 'Coding' ? 'Navigation-Child-Item-active' : ''}`}>
                         <a href="#" onClick={() => onLinkClick('Coding')}>Coding</a>
                     </div>
-                    <div className={`Nav-Item ${activeLink === 'Photography' ? 'active' : ''}`}>
+                    <div className={`Navigation-Child-Item ${activeLink === 'Photography' ? 'Navigation-Child-Item-active' : ''}`}>
                         <a href="#" onClick={() => onLinkClick('Photography')}>Photography</a>
                     </div>
-                    <div className={`Nav-Item ${activeLink === 'About' ? 'active' : ''}`}>
+                    <div className={`Navigation-Child-Item ${activeLink === 'About' ? 'Navigation-Child-Item-active' : ''}`}>
                         <a href="#" onClick={() => onLinkClick('About')}>About</a>
                     </div>
                 </div>

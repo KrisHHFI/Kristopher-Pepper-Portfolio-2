@@ -1,4 +1,36 @@
-.Header-Container {
+.Navigation-Child {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Navigation-Child-Item {
+    text-align: center;
+    width: inherit;
+}
+
+.Navigation-Child-Item a {
+    color: inherit;
+    display: inline-block;
+    padding: 7px 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.Navigation-Child-Item-active {
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.Navigation-Child-Item-active:hover {
+    background-color: red;
+    color: white;
+}
+
+.Navigation-Container {
     align-items: center;
     display: flex;
     flex: 1;
@@ -9,55 +41,7 @@
     top: 0;
 }
 
-/* Burger nav appears*/
-@media screen and (max-width: 900px) {
-    .Header-Container {
-        position: relative;
-        flex-direction: row;
-        height: fit-content;
-        padding: 10px 7px 10px 5px 
-    }
-
-    .hidden {
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .Header-Item-1 {
-        flex: 1;
-    }
-
-    .Header-Item-3 {
-        flex: 4;
-    }
-
-    .Nav-Bar {
-        margin: 0 !important;
-        height: 40px;
-        align-items: center;
-        width: 100% !important;
-    }
-}
-
-.Header-Item {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.KPText {
-    min-width: 60px;
-    width: 20%;
-}
-
-.PortfolioText {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    width: 40%;
-}
-
-.Nav-Bar {
+.Navigation-Item-Container {
     background-color: rgb(219, 219, 219);
     border-radius: 15px;
     display: flex;
@@ -68,31 +52,45 @@
     width: 60%;
 }
 
-.Nav-Item {
-    text-align: center;
-    width: inherit;
+.Navigation-KPText {
+    min-width: 50px;
+    width: 20%;
 }
 
-.Nav-Item a {
-    color: inherit;
-    display: inline-block;
-    padding: 7px 0;
-    text-decoration: none;
-    width: 100%;
+.Navigation-PortfolioText {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 40%;
 }
 
-.Nav-Item:hover {
-    color: red;
-}
+/* ---------- View Ports ----------*/
+/* Burger nav */
+@media screen and (max-width: 900px) {
+    .Navigation-Container {
+        flex-direction: row;
+        height: fit-content;
+        padding: 10px 7px 10px 5px;
+        position: relative;
+    }
 
-.active {
-    background-color: black;
-    border-radius: 15px;
-    color: White;
-    font-weight: bold;
-}
+    .Navigation-Child-1 {
+        flex: 1;
+    }
 
-.active:hover {
-    background-color: red;
-    color: White;
+    .Navigation-Child-3 {
+        flex: 4;
+    }
+
+    .Navigation-Item-Container {
+        align-items: center;
+        font-size: 16px;
+        height: 40px;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .Navigation-Child-Hidden {
+        visibility: hidden;
+        position: absolute;
+    }
 }
