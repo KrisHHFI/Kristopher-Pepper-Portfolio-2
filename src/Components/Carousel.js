@@ -16,8 +16,9 @@ const Carousel = ({ imageSources = {}, carouselTitle }) => {
 
   return (
     <div>
-      {carouselTitle && <h2 className="carouselTitle">{carouselTitle}</h2>}
       <div className={`carouselContainer`}>
+      {carouselTitle && <div className="carouselTitle">{carouselTitle}</div>}
+
         {images.length > 1 && (
           <img
             src={ComponentImageSources.leftArrow}

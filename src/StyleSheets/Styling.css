@@ -6,7 +6,7 @@
     padding: 10px;
     position: absolute;
     transition: opacity 0.3s ease;
-  }
+}
 
 .carouselContainer {
     align-items: center;
@@ -14,6 +14,7 @@
     height: max-content;
     justify-content: center;
     margin: auto;
+    margin-bottom: 30px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -38,6 +39,19 @@
 
 .carouselRightArrowImage {
     right: 0;
+}
+
+.carouselTitle {
+    background-color: black;
+    color: white;
+    font-size: clamp(18px, 4vw, 30px);
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: fit-content;
 }
 
 .Navigation-Child {
