@@ -39,12 +39,15 @@ export default function About() {
         <div class="About-Container">
             <Carousel
                 imageSources={BWPortraitImageSources}
+                carouselTitle={"BW PORTRAITS"}
             />
             <Carousel
                 imageSources={ColourPortraitSources}
+                carouselTitle={"COLOUR PORTRAITS"}
             />
             <Carousel
                 imageSources={BandImageSources}
+                carouselTitle={"BAND PORTRAITS"}
             />
             <AboutItem
                 coverImage={OfficeInterior}
