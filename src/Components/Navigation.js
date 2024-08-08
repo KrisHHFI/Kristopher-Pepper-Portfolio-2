@@ -14,14 +14,14 @@ export default function Navigation({ activeLink, onLinkClick }) {
             </div>
             <div className="Header-Item-3 Header-Item">
                 <div className="Nav-Bar">
-                    <div className={`Nav-Item ${activeLink === 'Products' ? 'active' : ''}`}>
-                        <a href="#" onClick={() => onLinkClick('Products')}>Coding</a>
+                    <div className={`Nav-Item ${activeLink === 'Coding' ? 'active' : ''}`}>
+                        <a href="#" onClick={() => onLinkClick('Coding')}>Coding</a>
+                    </div>
+                    <div className={`Nav-Item ${activeLink === 'Photography' ? 'active' : ''}`}>
+                        <a href="#" onClick={() => onLinkClick('Photography')}>Photography</a>
                     </div>
                     <div className={`Nav-Item ${activeLink === 'About' ? 'active' : ''}`}>
-                        <a href="#" onClick={() => onLinkClick('About')}>Photography</a>
-                    </div>
-                    <div className={`Nav-Item ${activeLink === 'Contact' ? 'active' : ''}`}>
-                        <a href="#" onClick={() => onLinkClick('Contact')}>About</a>
+                        <a href="#" onClick={() => onLinkClick('About')}>About</a>
                     </div>
                 </div>
             </div>
