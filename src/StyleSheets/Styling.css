@@ -28,7 +28,7 @@
     transition: opacity 0.3s ease;
 }
 
-.carouselContainer {
+.page-Item {
     align-items: center;
     display: flex;
     height: max-content;
@@ -40,11 +40,11 @@
     width: 100%;
 }
 
-.carouselContainer .carouselArrowImage:hover {
+.page-Item .carouselArrowImage:hover {
     opacity: 1 !important;
 }
 
-.carouselContainer:hover .carouselArrowImage {
+.page-Item:hover .carouselArrowImage {
     opacity: 0.3;
 }
 
@@ -95,14 +95,15 @@
 }
 
 .Navigation-Child-Item-active {
-    background-color: black;
+    background-color: red;
     border-radius: 15px;
     color: white;
     font-weight: bold;
 }
 
-.Navigation-Child-Item-active:hover {
+.Navigation-Child-Item:hover {
     background-color: red;
+    border-radius: 15px;
     color: white;
 }
 

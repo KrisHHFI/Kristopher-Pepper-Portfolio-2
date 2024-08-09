@@ -16,7 +16,7 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
 
   return (
     <div>
-      <div className={`carouselContainer`}>
+      <div className={`page-Item`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
         {images.length === 0 && textSections.length > 0 && (
           <div className="page-Item-Text-Box">
