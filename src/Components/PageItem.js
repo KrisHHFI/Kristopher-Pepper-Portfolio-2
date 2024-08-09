@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [] }) => {
+const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [], noItemBottomPadding }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -16,11 +16,11 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
 
   return (
     <div>
-      <div className={`page-Item`}>
+      <div className={`page-Item ${noItemBottomPadding ? 'page-Item-No-Padding' : ''}`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
         {images.length === 0 && textSections.length > 0 && (
           <>
-            <div className="page-Item-Text-Box-Container">
+            <div>
               {textSections.map((section, index) => (
                 <div className="page-Item-Text-Box" key={index}>
                   {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
@@ -62,9 +62,9 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
 
 PageItem.propTypes = {
   imageSources: PropTypes.object,
-  hasSplitLayout: PropTypes.bool,
   PageItemTitle: PropTypes.string,
   noArrows: PropTypes.bool,
+  noItemBottomPadding: PropTypes.bool,
   textSections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -78,9 +78,9 @@ PageItem.propTypes = {
 
 PageItem.defaultProps = {
   imageSources: {},
-  hasSplitLayout: false,
   PageItemTitle: '',
   noArrows: false,
+  noItemBottomPadding: false,
   textSections: []
 };
 

@@ -47,9 +47,14 @@
     justify-content: center;
     margin: auto;
     margin-bottom: 30px;
+    min-height: 50px;
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+
+.page-Item-No-Padding {
+    margin-bottom: 0px;
 }
 
 .page-Item .carouselArrowImage:hover {

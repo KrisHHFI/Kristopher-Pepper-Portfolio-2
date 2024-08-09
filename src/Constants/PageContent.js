@@ -1,25 +1,38 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImage } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
 
 export const CodingPageContent = () => {
     return (
         <>
             <PageItem
                 PageItemTitle={"TIC TAC FARM"}
+                imageSources={TicTacFarmImage}
+                noArrows={true}
+                noItemBottomPadding={true}
+            />
+            <PageItem
                 noArrows={true}
                 textSections={[
                     {
-                        text: `Technologies: CSS, Expo Go, JavaScript, React Native`
+                        text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, Expo Go, JavaScript, React Native.`
                     },
-                    {
-                        text: `Another text block for the same section.`
-                    }
                 ]}
             />
+            {/* Divider */}
             <PageItem
-                imageSources={TicTacFarmImage}
+                PageItemTitle={"REACT WEATHER APP"}
+                imageSources={WeatherAppImage}
                 noArrows={true}
+                noItemBottomPadding={true}
+            />
+            <PageItem
+                noArrows={true}
+                textSections={[
+                    {
+                        text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, TypeScript, React Native, REST API.`
+                    },
+                ]}
             />
         </>
     );
