@@ -2,7 +2,19 @@ import React from 'react';
 import PageItem from '../Components/PageItem';
 import { BandImageSources, BWPortraitImageSources, ColourPortraitSources } from '../Constants/ImageSources';
 
-const PageContent = () => {
+export const CodingPageContent = () => {
+    return (
+        <>
+            <PageItem
+                imageSources={BWPortraitImageSources}
+                PageItemTitle={"TIC TAC FARM"}
+                noArrows={true}
+            />
+        </>
+    );
+};
+
+export const PhotographyPageContent = () => {
     return (
         <>
             <PageItem
@@ -34,5 +46,3 @@ const PageContent = () => {
         </>
     );
 };
-
-export default PageContent;

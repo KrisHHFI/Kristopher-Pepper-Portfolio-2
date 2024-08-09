@@ -1,3 +1,10 @@
+.Page-Container {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .page-Item-Text-Box {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
