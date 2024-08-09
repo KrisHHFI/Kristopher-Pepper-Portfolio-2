@@ -19,7 +19,7 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, text, textTitle 
       <div className={`carouselContainer`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
         
-        {text && (
+        {images.length === 0 && text && (
           <div className="page-Item-Text-Box">
             {textTitle && <div className="page-Item-Text-Title">{textTitle}</div>}
             <div>{text}</div>
@@ -34,10 +34,8 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, text, textTitle 
             onClick={handlePrev}
           />
         )}
-        {images.length > 0 ? (
+        {images.length > 0 && (
           <img src={images[currentImageIndex]} alt="carousel" className="carouselImage" />
-        ) : (
-          <p>No images available</p>
         )}
         {!noArrows && images.length > 1 && (
           <img

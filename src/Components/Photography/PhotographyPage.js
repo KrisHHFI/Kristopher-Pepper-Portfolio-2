@@ -19,11 +19,14 @@ export default function About() {
                 PageItemTitle={"BAND PORTRAITS"}
             />
             <PageItem
-                imageSources={CityscapeImage}
                 PageItemTitle={"BACKGROUND"}
                 noArrows={true}
-                text={'From 2016 to 2018 I studied photography in London. On the side, I was working as a waiter and photographing walking tours.'
-                }
+                text={`I was lucky to have the opportunity to go backpacking when I was 19 years old. Whilst travelling down the East Coast of Australia, I took snapshots on my phone. I found myself slowly trying to improve the composition and take better photos. This is where I discovered an interest in photography.
+        
+From 2016 to 2018, I studied photography in London. On the side, I was working as a waiter and photographing walking tours. I found myself gravitating towards head shots and portraits, because I liked meeting new people and breaking the ice.
+        
+cat
+            `}
                 textTitle={"Studies"}
             />
         </div>
