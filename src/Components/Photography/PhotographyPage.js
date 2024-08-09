@@ -1,42 +1,30 @@
 import React from 'react';
-import AboutItem from './About-Item-1';
-import OfficeInterior from '../../Images/About/OfficeInterior.png';
-import Who from '../../Images/About/Who.png';
-
 import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, CityscapeImage } from '../../Constants/ImageSources';
-import Carousel from '../Carousel';
-
+import PageItem from '../PageItem';
 
 export default function About() {
-    const titleText1 = `Tempor incididunt ut labore!`;
-    const text1 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua.`;
 
     return (
         <div class="About-Container">
-            <Carousel
+            <PageItem
                 imageSources={BWPortraitImageSources}
-                carouselTitle={"BW PORTRAITS"}
+                PageItemTitle={"BW PORTRAITS"}
             />
-            <Carousel
+            <PageItem
                 imageSources={ColourPortraitSources}
-                carouselTitle={"COLOUR PORTRAITS"}
+                PageItemTitle={"COLOUR PORTRAITS"}
             />
-            <Carousel
+            <PageItem
                 imageSources={BandImageSources}
-                carouselTitle={"BAND PORTRAITS"}
+                PageItemTitle={"BAND PORTRAITS"}
             />
-
-            <Carousel
+            <PageItem
                 imageSources={CityscapeImage}
-                carouselTitle={"BACKGROUND"}
+                PageItemTitle={"BACKGROUND"}
                 noArrows={true}
-            />
-            <AboutItem
-                coverImage={OfficeInterior}
-                titleImage={Who}
-                titleText={titleText1}
-                text={text1}
+                text={'From 2016 to 2018 I studied photography in London. On the side, I was working as a waiter and photographing walking tours.'
+                }
+                textTitle={"Studies"}
             />
         </div>
     );

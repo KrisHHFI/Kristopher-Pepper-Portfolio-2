@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const Carousel = ({ imageSources = {}, carouselTitle, noArrows }) => {
+const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, text, textTitle }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -17,7 +17,14 @@ const Carousel = ({ imageSources = {}, carouselTitle, noArrows }) => {
   return (
     <div>
       <div className={`carouselContainer`}>
-        {carouselTitle && <div className="carouselTitle">{carouselTitle}</div>}
+        {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
+        
+        {text && (
+          <div className="page-Item-Text-Box">
+            {textTitle && <div className="page-Item-Text-Title">{textTitle}</div>}
+            <div>{text}</div>
+          </div>
+        )}
 
         {!noArrows && images.length > 1 && (
           <img
@@ -45,18 +52,22 @@ const Carousel = ({ imageSources = {}, carouselTitle, noArrows }) => {
   );
 };
 
-Carousel.propTypes = {
+PageItem.propTypes = {
   imageSources: PropTypes.object,
   hasSplitLayout: PropTypes.bool,
-  carouselTitle: PropTypes.string,
-  noArrows: PropTypes.bool
+  PageItemTitle: PropTypes.string,
+  noArrows: PropTypes.bool,
+  text: PropTypes.string,
+  textTitle: PropTypes.string
 };
 
-Carousel.defaultProps = {
+PageItem.defaultProps = {
   imageSources: {},
   hasSplitLayout: false,
-  carouselTitle: '',
-  noArrows: false
+  PageItemTitle: '',
+  noArrows: false,
+  text: '',
+  textTitle: ''
 };
 
-export default Carousel;
+export default PageItem;

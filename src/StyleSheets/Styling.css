@@ -1,3 +1,22 @@
+.page-Item-Text-Box {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(16px, 4vw, 18px);
+    justify-content: center;
+    padding: 10px 2vw 10px 2vw;
+    position: absolute;
+    text-align: center;
+}
+
+.page-Item-Text-Title {
+    font-size: clamp(18px, 4vw, 22px);
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
 .carouselArrowImage {
     background-color: grey;
     cursor: pointer;
@@ -41,7 +60,7 @@
     right: 0;
 }
 
-.carouselTitle {
+.PageItemTitle {
     background-color: black;
     color: white;
     font-size: clamp(18px, 4vw, 30px);

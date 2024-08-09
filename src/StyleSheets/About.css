@@ -21,27 +21,6 @@
     top: 0;
 }
 
-.About-Text-Title {
-    font-size: 22px;
-    font-style: italic;
-    padding-bottom: 10px;
-}
-
-.About-Text-Box {
-    background-color: rgba(0, 0, 0, 0.8);
-    bottom: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    justify-content: center;
-    margin: 0 40px 20px 40px;
-    padding: 10px 40px 10px 40px;
-    position: absolute;
-    text-align: center;
-    width: calc(100% - 160px);
-}
-
 .About-Item-2-Container {
     align-content: center;
     align-items: center;
