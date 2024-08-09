@@ -1,13 +1,24 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImage } from '../Constants/ImageSources';
 
 export const CodingPageContent = () => {
     return (
         <>
             <PageItem
-                imageSources={BWPortraitImageSources}
                 PageItemTitle={"TIC TAC FARM"}
+                noArrows={true}
+                textSections={[
+                    {
+                        text: `Technologies: CSS, Expo Go, JavaScript, React Native`
+                    },
+                    {
+                        text: `Another text block for the same section.`
+                    }
+                ]}
+            />
+            <PageItem
+                imageSources={TicTacFarmImage}
                 noArrows={true}
             />
         </>

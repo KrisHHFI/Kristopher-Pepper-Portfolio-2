@@ -19,14 +19,22 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
       <div className={`page-Item`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
         {images.length === 0 && textSections.length > 0 && (
-          <div className="page-Item-Text-Box">
-            {textSections.map((section, index) => (
-              <div key={index}>
-                {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
-                <div>{section.text}</div>
-              </div>
-            ))}
-          </div>
+          <>
+            <div className="page-Item-Text-Box-Container">
+              {textSections.map((section, index) => (
+                <div className="page-Item-Text-Box" key={index}>
+                  {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
+                  {Array.isArray(section.text) ? (
+                    section.text.map((text, textIndex) => (
+                      <div key={textIndex}>{text}</div>
+                    ))
+                  ) : (
+                    <div>{section.text}</div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </>
         )}
         {!noArrows && images.length > 1 && (
           <img
@@ -60,7 +68,10 @@ PageItem.propTypes = {
   textSections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      text: PropTypes.string
+      text: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string)
+      ])
     })
   )
 };

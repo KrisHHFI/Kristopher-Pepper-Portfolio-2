@@ -42,6 +42,7 @@ import WeatherApp4 from '../Assets/Images/WeatherApp4.png';
 import GitHub from '../Assets/Images/GitHub.png';
 import LinkedIn from '../Assets/Images/LinkedIn.png';
 import Cityscape from '../Assets/Images/Cityscape.jpg';
+import TicTacFarm from '../Assets/Images/TicTacFarm.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -109,3 +110,4 @@ export const AboutPageImageSources = {
 };
 
 export const CityscapeImage = { cityscape: Cityscape };
+export const TicTacFarmImage = { ticTacFarm: TicTacFarm };
