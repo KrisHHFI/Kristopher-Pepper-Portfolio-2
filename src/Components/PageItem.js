@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, text, textTitle }) => {
+const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [] }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -18,14 +18,16 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, text, textTitle 
     <div>
       <div className={`carouselContainer`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
-        
-        {images.length === 0 && text && (
+        {images.length === 0 && textSections.length > 0 && (
           <div className="page-Item-Text-Box">
-            {textTitle && <div className="page-Item-Text-Title">{textTitle}</div>}
-            <div>{text}</div>
+            {textSections.map((section, index) => (
+              <div key={index}>
+                {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
+                <div>{section.text}</div>
+              </div>
+            ))}
           </div>
         )}
-
         {!noArrows && images.length > 1 && (
           <img
             src={ComponentImageSources.leftArrow}
@@ -55,8 +57,12 @@ PageItem.propTypes = {
   hasSplitLayout: PropTypes.bool,
   PageItemTitle: PropTypes.string,
   noArrows: PropTypes.bool,
-  text: PropTypes.string,
-  textTitle: PropTypes.string
+  textSections: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      text: PropTypes.string
+    })
+  )
 };
 
 PageItem.defaultProps = {
@@ -64,8 +70,7 @@ PageItem.defaultProps = {
   hasSplitLayout: false,
   PageItemTitle: '',
   noArrows: false,
-  text: '',
-  textTitle: ''
+  textSections: []
 };
 
 export default PageItem;
