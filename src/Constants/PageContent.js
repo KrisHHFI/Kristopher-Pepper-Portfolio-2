@@ -1,6 +1,6 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, ClockProjectImage, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
 
 export const AboutPageContent = () => {
     return (
@@ -63,6 +63,23 @@ export const CodingPageContent = () => {
                     textSections={[
                         {
                             text: `A browser based weather app. Enables the user to discover the current and forecasted weather, of places around the world.\n\nTechnologies: CSS, TypeScript, React Native, REST API.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"CSS Clock Project"}
+                    imageSources={ClockProjectImage}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    hasButton={true}
+                    projectURL={"https://github.com/KrisHHFI/Clock"}
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `A HTML browser clock. With this project I wanted to see how far I could go with CSS styling. Note, I did not consider different screen sizes, so the clock's size static.\n\nTechnologies: CSS, HTML.`
                         },
                     ]}
                 />

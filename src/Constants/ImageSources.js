@@ -36,7 +36,7 @@ import LinkedIn from '../Assets/Images/LinkedIn.png';
 import TicTacFarm from '../Assets/Images/TicTacFarm.png';
 import kpLogo from '../Assets/Images/KP.png';
 import portfolioText from '../Assets/Images/Portfolio.png';
-
+import clockProject from '../Assets/Images/ClockProject.gif';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -90,5 +90,6 @@ export const NavigationImageSources = {
 };
 
 export const AboutPageImageSource = { me: me };
+export const ClockProjectImage = { clockProject: clockProject };
 export const TicTacFarmImage = { ticTacFarm: TicTacFarm };
 export const WeatherAppImage = { weatherApp: WeatherApp };
