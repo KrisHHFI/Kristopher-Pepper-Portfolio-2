@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationImageSources } from '../Constants/ImageSources';
 
 export default function Navigation({ activeLink, onLinkClick }) {
-    
     return (
         <div className="Navigation-Container">
             <div className="Navigation-Child-1 Navigation-Child">

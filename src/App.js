@@ -6,11 +6,9 @@ import './StyleSheets/Content.css';
 import './StyleSheets/Products.css';
 import './StyleSheets/About.css';
 import './StyleSheets/Contact.css';
-// Components
 import Navigation from './Components/Navigation';
-import Coding from './Components/Coding/CodingPage';
-import Photography from './Components/Photography/PhotographyPage';
-import About from './Components/About/About';
+
+import { AboutPageContent, CodingPageContent, PhotographyPageContent } from './Constants/PageContent.js';
 
 function App() {
   const [activeLink, setActiveLink] = useState('Coding');
@@ -22,13 +20,13 @@ function App() {
   const renderContent = () => {
     switch (activeLink) {
       case 'Coding':
-        return <Coding />;
+        return <CodingPageContent />;
       case 'Photography':
-        return <Photography />;
+        return <PhotographyPageContent />;
       case 'About':
-        return <About />;
+        return <AboutPageContent />;
       default:
-        return <Coding />;
+        return <CodingPageContent />;
     }
   };
 
