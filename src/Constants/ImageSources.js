@@ -30,16 +30,13 @@ import colour10 from '../Assets/Images/Colour10.jpg';
 import leftArrow from '../Assets/Images/LeftArrow.png';
 import me from '../Assets/Images/Me.gif';
 import rightArrow from '../Assets/Images/RightArrow.png';
-import TicTacFarm1 from '../Assets/Images/TicTacFarm1.png';
-import TicTacFarm2 from '../Assets/Images/TicTacFarm2.png';
-import TicTacFarm3 from '../Assets/Images/TicTacFarm3.png';
-import TicTacFarm4 from '../Assets/Images/TicTacFarm4.png';
-import TicTacFarm5 from '../Assets/Images/TicTacFarm5.png';
 import WeatherApp from '../Assets/Images/WeatherApp.png';
 import GitHub from '../Assets/Images/GitHub.png';
 import LinkedIn from '../Assets/Images/LinkedIn.png';
-import Cityscape from '../Assets/Images/Cityscape.jpg';
 import TicTacFarm from '../Assets/Images/TicTacFarm.png';
+import kpLogo from '../Assets/Images/KP.png';
+import portfolioText from '../Assets/Images/Portfolio.png';
+
 
 export const BWPortraitImageSources = {
     bw1,
@@ -87,18 +84,11 @@ export const ComponentImageSources = {
     rightArrow,
 };
 
-export const TicTacFarmImageSources = {
-    TicTacFarm1,
-    TicTacFarm2,
-    TicTacFarm3,
-    TicTacFarm4,
-    TicTacFarm5,
+export const NavigationImageSources = {
+    kpLogo,
+    portfolioText,
 };
 
-export const AboutPageImageSources = {
-    me,
-};
-
-export const CityscapeImage = { cityscape: Cityscape };
+export const AboutPageImageSource = { me: me };
 export const TicTacFarmImage = { ticTacFarm: TicTacFarm };
 export const WeatherAppImage = { weatherApp: WeatherApp };
