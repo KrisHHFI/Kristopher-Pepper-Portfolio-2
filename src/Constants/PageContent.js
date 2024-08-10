@@ -8,6 +8,7 @@ export const AboutPageContent = () => {
             <div className="Page-Container">
                 <PageItem
                     PageItemTitle={"BACKGROUND"}
+                    textBoxTopPadding={true}
                     noArrows={true}
                     textSections={[
                         {

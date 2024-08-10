@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 
-.Content-Container{
+.Content-Container {
   background-color: transparent;
   display: flex;
   flex: 1;
@@ -27,6 +27,10 @@ a {
   margin-top: 10px;
   text-align: center;
   white-space: pre-wrap;
+}
+
+.page-Item-Top-Padding {
+  padding-top: 50px;
 }
 
 .page-Item-Text-Box-Container {
@@ -189,35 +193,39 @@ a {
 /* ---------- View Ports ----------*/
 /* Burger nav */
 @media screen and (max-width: 900px) {
+  .carouselArrowImage {
+    opacity: 0.5;
+  }
+
   .Navigation-Container {
-      flex-direction: row;
-      height: fit-content;
-      padding: 10px 7px 10px 5px;
-      position: relative;
+    flex-direction: row;
+    height: fit-content;
+    padding: 10px 7px 10px 5px;
+    position: relative;
   }
 
   .Navigation-Child-1 {
-      flex: 1;
+    flex: 1;
   }
 
   .Navigation-Child-3 {
-      flex: 4;
+    flex: 4;
   }
 
   .Navigation-Item-Container {
-      align-items: center;
-      font-size: 16px;
-      height: 40px;
-      margin: 0 !important;
-      width: 100% !important;
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+    margin: 0 !important;
+    width: 100% !important;
   }
 
   .Navigation-Child-Hidden {
-      visibility: hidden;
-      position: absolute;
+    visibility: hidden;
+    position: absolute;
   }
 
   .Wrapper {
     flex-direction: column;
-}
+  }
 }

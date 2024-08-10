@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [], noItemBottomPadding, hasButton, projectURL }) => {
+const PageItem = ({
+  imageSources = {},
+  PageItemTitle,
+  noArrows,
+  textSections = [],
+  noItemBottomPadding,
+  hasButton,
+  projectURL,
+  textBoxTopPadding
+}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -19,22 +28,23 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
       <div className={`page-Item ${noItemBottomPadding ? 'page-Item-No-Padding' : ''}`}>
         {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
         {images.length === 0 && textSections.length > 0 && (
-          <>
-            <div>
-              {textSections.map((section, index) => (
-                <div className="page-Item-Text-Box" key={index}>
-                  {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
-                  {Array.isArray(section.text) ? (
-                    section.text.map((text, textIndex) => (
-                      <div key={textIndex}>{text}</div>
-                    ))
-                  ) : (
-                    <div>{section.text}</div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </>
+          <div>
+            {textSections.map((section, index) => (
+              <div
+                className={`page-Item-Text-Box ${index === 0 && textBoxTopPadding ? 'page-Item-Top-Padding' : ''}`}
+                key={index}
+              >
+                {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
+                {Array.isArray(section.text) ? (
+                  section.text.map((text, textIndex) => (
+                    <div key={textIndex}>{text}</div>
+                  ))
+                ) : (
+                  <div>{section.text}</div>
+                )}
+              </div>
+            ))}
+          </div>
         )}
         {!noArrows && images.length > 1 && (
           <img
@@ -78,7 +88,8 @@ PageItem.propTypes = {
         PropTypes.arrayOf(PropTypes.string)
       ])
     })
-  )
+  ),
+  textBoxTopPadding: PropTypes.bool
 };
 
 PageItem.defaultProps = {
@@ -88,7 +99,8 @@ PageItem.defaultProps = {
   noItemBottomPadding: false,
   hasButton: false,
   projectURL: '',
-  textSections: []
+  textSections: [],
+  textBoxTopPadding: false
 };
 
 export default PageItem;
