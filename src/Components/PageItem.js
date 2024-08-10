@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ComponentImageSources } from '../Constants/ImageSources.js';
 
-const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [], noItemBottomPadding }) => {
+const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [], noItemBottomPadding, hasButton, projectURL }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
 
@@ -55,6 +55,9 @@ const PageItem = ({ imageSources = {}, PageItemTitle, noArrows, textSections = [
             onClick={handleNext}
           />
         )}
+        {hasButton && projectURL && (
+          <a className="Project-Link" href={projectURL} target="_blank" rel="noopener noreferrer">GitHub Project</a>
+        )}
       </div>
     </div>
   );
@@ -65,6 +68,8 @@ PageItem.propTypes = {
   PageItemTitle: PropTypes.string,
   noArrows: PropTypes.bool,
   noItemBottomPadding: PropTypes.bool,
+  hasButton: PropTypes.bool,
+  projectURL: PropTypes.string,
   textSections: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -81,6 +86,8 @@ PageItem.defaultProps = {
   PageItemTitle: '',
   noArrows: false,
   noItemBottomPadding: false,
+  hasButton: false,
+  projectURL: '',
   textSections: []
 };
 

@@ -12,6 +12,8 @@ export const CodingPageContent = () => {
                 noItemBottomPadding={true}
             />
             <PageItem
+                hasButton={true}
+                projectURL={"https://github.com/KrisHHFI/Tic-Tac-Farm-Android-App"}
                 noArrows={true}
                 textSections={[
                     {
@@ -27,10 +29,12 @@ export const CodingPageContent = () => {
                 noItemBottomPadding={true}
             />
             <PageItem
+                hasButton={true}
+                projectURL={"https://github.com/KrisHHFI/React-Weather-App"}
                 noArrows={true}
                 textSections={[
                     {
-                        text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, TypeScript, React Native, REST API.`
+                        text: `A browser based weather app. Enables the user to discover the current and forecasted weather, of places around the world.\n\nTechnologies: CSS, TypeScript, React Native, REST API.`
                     },
                 ]}
             />
