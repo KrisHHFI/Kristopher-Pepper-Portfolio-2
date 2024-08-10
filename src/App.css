@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Content-Container{
+  background-color: transparent;
+  display: flex;
+  flex: 1;
   min-height: 100vh;
+}
+
+.Page-Container {
+  background-color: rgb(219, 219, 219);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+
+.page-Item-Text-Box {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(16px, 4vw, 18px);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 2vw 10px 2vw;
+  margin: 10px;
+  margin-top: 10px;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.page-Item-Text-Box-Container {
+  padding-top: 60px;
+}
+
+.page-Item-Text-Title {
+  font-size: clamp(18px, 4vw, 22px);
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.carouselArrowImage {
+  background-color: grey;
+  cursor: pointer;
+  max-height: 7.5%;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.page-Item {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  min-height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.page-Item-No-Padding {
+  margin-bottom: 0px;
+}
+
+.page-Item .carouselArrowImage:hover {
+  opacity: 1 !important;
+}
+
+.page-Item:hover .carouselArrowImage {
+  opacity: 0.3;
+}
+
+.Project-Link {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  font-size: clamp(16px, 4vw, 18px);
+  font-weight: bold;
+  padding: 5px 40px 5px 40px;
+  text-transform: uppercase;
+}
+
+.Project-Link:hover {
+  background-color: black;
+}
+
+.carouselImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carouselLeftArrowImage {
+  left: 0;
+}
+
+.carouselRightArrowImage {
+  right: 0;
+}
+
+.PageItemTitle {
+  background-color: black;
+  font-size: clamp(18px, 4vw, 30px);
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: fit-content;
+}
+
+.Navigation-Child {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Navigation-Child-Item {
+  text-align: center;
+  width: inherit;
+}
+
+.Navigation-Child-Item a {
+  color: inherit;
+  display: inline-block;
+  padding: 7px 0;
+  text-decoration: none;
+  width: 100%;
+}
+
+.Navigation-Child-Item-active {
+  background-color: red;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.Navigation-Child-Item:hover {
+  background-color: red;
+  border-radius: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Navigation-Container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: calc(100vh - 30px);
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Navigation-Item-Container {
+  background-color: rgb(219, 219, 219);
+  border-radius: 15px;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.Navigation-KPText {
+  min-width: 50px;
+  width: 20%;
+}
+
+.Navigation-PortfolioText {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 40%;
+}
+
+.Wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------- View Ports ----------*/
+/* Burger nav */
+@media screen and (max-width: 900px) {
+  .Navigation-Container {
+      flex-direction: row;
+      height: fit-content;
+      padding: 10px 7px 10px 5px;
+      position: relative;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Navigation-Child-1 {
+      flex: 1;
   }
+
+  .Navigation-Child-3 {
+      flex: 4;
+  }
+
+  .Navigation-Item-Container {
+      align-items: center;
+      font-size: 16px;
+      height: 40px;
+      margin: 0 !important;
+      width: 100% !important;
+  }
+
+  .Navigation-Child-Hidden {
+      visibility: hidden;
+      position: absolute;
+  }
+
+  .Wrapper {
+    flex-direction: column;
+}
 }

@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-// Stylesheets
-import './StyleSheets/Common.css';
-import './StyleSheets/Styling.css';
-import './StyleSheets/Content.css';
-import './StyleSheets/Products.css';
-import './StyleSheets/About.css';
-import './StyleSheets/Contact.css';
+import './App.css';
 import Navigation from './Components/Navigation';
 
 import { AboutPageContent, CodingPageContent, PhotographyPageContent } from './Constants/PageContent.js';
