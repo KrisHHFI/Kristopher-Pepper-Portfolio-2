@@ -118,6 +118,24 @@ a {
   width: fit-content;
 }
 
+.socialIcon {
+  height: 2vw;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  object-fit: contain;
+  transition: background-color 0.3s ease;
+}
+
+.socialIconsContainer {
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
 .Navigation-Child {
   align-items: center;
   display: flex;
@@ -191,8 +209,15 @@ a {
 }
 
 /* ---------- View Ports ----------*/
-/* Burger nav */
 @media screen and (max-width: 900px) {
+  .page-Item:hover .PageItemTitle {
+    opacity: 0.5;
+  }
+
+  .socialIconsContainer {
+    visibility: hidden;
+  }
+
   .carouselArrowImage {
     opacity: 0.5;
   }

@@ -37,6 +37,7 @@ import TicTacFarm from '../Assets/Images/TicTacFarm.png';
 import kpLogo from '../Assets/Images/KP.png';
 import portfolioText from '../Assets/Images/Portfolio.png';
 import clockProject from '../Assets/Images/ClockProject.gif';
+import CameraIcon from '../Assets/Images/CameraIcon.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -78,11 +79,16 @@ export const BandImageSources = {
 
 
 export const ComponentImageSources = {
-    GitHub,
     leftArrow,
-    LinkedIn,
     rightArrow,
 };
+
+export const SocialIconImageSources = [
+    { src: CameraIcon, alt: 'CameraIcon Icon', href: 'https://www.shutterstock.com/g/Kristopher+Pepper?rid=263519982' },
+    { src: GitHub, alt: 'GitHub social icon', href: 'https://github.com/KrisHHFI' },
+    { src: LinkedIn, alt: 'LinkedIn Icon', href: 'https://www.linkedin.com/in/kristopher-pepper-824184136/' },
+];
+
 
 export const NavigationImageSources = {
     kpLogo,

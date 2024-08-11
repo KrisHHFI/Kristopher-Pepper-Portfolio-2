@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavigationImageSources } from '../Constants/ImageSources';
+import SocialIcons from './SocialIcons';
 
 export default function Navigation({ activeLink, onLinkClick }) {
     return (
@@ -23,6 +24,7 @@ export default function Navigation({ activeLink, onLinkClick }) {
                     </div>
                 </div>
             </div>
+            <SocialIcons/>
         </div>
     );
 }
