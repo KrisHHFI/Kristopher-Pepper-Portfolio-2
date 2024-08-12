@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navigation from './Components/Navigation';
-
 import { AboutPageContent, CodingPageContent, PhotographyPageContent } from './Constants/PageContent.js';
+import SocialIcons from './Components/SocialIcons';
 
 function App() {
   const [activeLink, setActiveLink] = useState('Coding');
@@ -29,6 +29,9 @@ function App() {
       <Navigation activeLink={activeLink} onLinkClick={handleLinkClick} />
       <div className="Content-Container">
         {renderContent()}
+      </div>
+      <div className="Page-Social-Icon-Container">
+        <SocialIcons />
       </div>
     </div>
   );

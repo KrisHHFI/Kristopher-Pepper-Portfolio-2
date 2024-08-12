@@ -136,6 +136,17 @@ a {
   width: 100%;
 }
 
+.Page-Social-Icon-Container {
+  display: none;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.Navigation-Social-Icon-Container {
+  width: 100%;
+}
+
 .Navigation-Child {
   align-items: center;
   display: flex;
@@ -214,8 +225,20 @@ a {
     opacity: 0.5;
   }
 
+  .Page-Social-Icon-Container {
+    display: block;
+  }
+
+  .Navigation-Social-Icon-Container {
+    display: none;
+  }
+
   .socialIconsContainer {
-    visibility: hidden;
+    position: relative;
+  }
+
+  .socialIcon {
+    height: 4vw;
   }
 
   .carouselArrowImage {

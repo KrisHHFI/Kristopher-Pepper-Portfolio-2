@@ -24,7 +24,9 @@ export default function Navigation({ activeLink, onLinkClick }) {
                     </div>
                 </div>
             </div>
-            <SocialIcons/>
+            <div className="Navigation-Social-Icon-Container">
+                <SocialIcons />
+            </div>
         </div>
     );
 }
