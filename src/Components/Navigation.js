@@ -17,7 +17,7 @@ export default function Navigation({ activeLink, onLinkClick }) {
                         <a href="#" onClick={() => onLinkClick('Coding')}>Coding</a>
                     </div>
                     <div className={`Navigation-Child-Item ${activeLink === 'Photography' ? 'Navigation-Child-Item-active' : ''}`}>
-                        <a href="#" onClick={() => onLinkClick('Photography')}>Photography</a>
+                        <a href="#" onClick={() => onLinkClick('Photography')}>Photos</a>
                     </div>
                     <div className={`Navigation-Child-Item ${activeLink === 'About' ? 'Navigation-Child-Item-active' : ''}`}>
                         <a href="#" onClick={() => onLinkClick('About')}>About</a>

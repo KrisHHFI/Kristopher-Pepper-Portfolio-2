@@ -172,7 +172,9 @@ a {
 }
 
 .Navigation-Child-Item {
+  border-radius: 15px;
   text-align: center;
+  transition: background-color 0.5s ease;
   width: inherit;
 }
 
@@ -270,7 +272,7 @@ a {
   .Navigation-Container {
     flex-direction: row;
     height: fit-content;
-    padding: 10px 7px 10px 5px;
+    padding: 15px 5px 40px 5px;
     position: relative;
   }
 
@@ -279,13 +281,13 @@ a {
   }
 
   .Navigation-Child-3 {
-    flex: 4;
+    flex: 5;
   }
 
   .Navigation-Item-Container {
     align-items: center;
     font-size: 16px;
-    height: 40px;
+    height: 100%;
     margin: 0 !important;
     width: 100% !important;
   }
