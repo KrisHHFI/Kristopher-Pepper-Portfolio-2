@@ -66,7 +66,13 @@ const PageItem = ({
           />
         )}
         {hasButton && projectURL && (
-          <a className="Project-Link" href={projectURL} target="_blank" rel="noopener noreferrer">GitHub Project</a>
+          <a className="Project-Link" href={projectURL} target="_blank" rel="noopener noreferrer">
+            <img
+              src={ComponentImageSources.link}
+              alt="Link icon"
+              className="link-Icon"
+            />
+          </a>
         )}
       </div>
     </div>

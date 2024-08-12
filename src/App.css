@@ -80,17 +80,28 @@ a {
   opacity: 0.3;
 }
 
+
 .Project-Link {
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 15px;
-  font-size: clamp(16px, 4vw, 18px);
-  font-weight: bold;
-  padding: 5px 40px 5px 40px;
-  text-transform: uppercase;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
 }
 
 .Project-Link:hover {
   background-color: black;
+}
+
+.link-Icon {
+  padding: 5px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  height: 2vw;
+  min-height: 25px;
+  min-width: 25px;
+  width: 2vw;
+}
+
+.link-Icon:hover {
+  transform: scale(1.1);
 }
 
 .carouselImage {
@@ -124,7 +135,13 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   object-fit: contain;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  min-height: 25px;
+  min-width: 25px;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
 }
 
 .socialIconsContainer {
@@ -238,7 +255,12 @@ a {
   }
 
   .socialIcon {
-    height: 4vw;
+    height: 3vw;
+  }
+
+  .link-Icon {
+    height: 3vw;
+    width: 3vw;
   }
 
   .carouselArrowImage {

@@ -38,6 +38,7 @@ import kpLogo from '../Assets/Images/KP.png';
 import portfolioText from '../Assets/Images/Portfolio.png';
 import clockProject from '../Assets/Images/ClockProject.gif';
 import CameraIcon from '../Assets/Images/CameraIcon.png';
+import link from '../Assets/Images/link.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -80,6 +81,7 @@ export const BandImageSources = {
 
 export const ComponentImageSources = {
     leftArrow,
+    link,
     rightArrow,
 };
 
