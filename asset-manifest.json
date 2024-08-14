@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.d9b7b59d.css",
-    "main.js": "/Portfolio/static/js/main.49bb3f60.js",
-    "static/js/453.854e04de.chunk.js": "/Portfolio/static/js/453.854e04de.chunk.js",
+    "main.js": "/Portfolio/static/js/main.87827b22.js",
+    "static/js/453.8530122b.chunk.js": "/Portfolio/static/js/453.8530122b.chunk.js",
     "static/media/Colour2.jpg": "/Portfolio/static/media/Colour2.29d8071ff7dcc4ce6310.jpg",
     "static/media/Colour3.jpg": "/Portfolio/static/media/Colour3.2cdd58892908563e5dcb.jpg",
     "static/media/BW1.jpg": "/Portfolio/static/media/BW1.1d092229b294967c5016.jpg",
@@ -36,6 +36,8 @@
     "static/media/BW7.jpg": "/Portfolio/static/media/BW7.507dc4dd9db418133b8e.jpg",
     "static/media/BW9.jpg": "/Portfolio/static/media/BW9.1af9a38c2cca45105e21.jpg",
     "static/media/BW10.jpg": "/Portfolio/static/media/BW10.371c0bc154689a750466.jpg",
+    "static/media/Stock-Plotter-Project.png": "/Portfolio/static/media/Stock-Plotter-Project.ccadc780935ee1c4ee5a.png",
+    "static/media/CCPPasswordGenerator.png": "/Portfolio/static/media/CCPPasswordGenerator.53a58ad733d6cc40bb69.png",
     "static/media/link.png": "/Portfolio/static/media/link.fe02f2d156b2d7dfc367.png",
     "static/media/GitHub.png": "/Portfolio/static/media/GitHub.932752fbabe9c64eb2e2.png",
     "static/media/CameraIcon.png": "/Portfolio/static/media/CameraIcon.d5c1e82816f0eefcdaef.png",
@@ -44,11 +46,11 @@
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.a31ce073b575b0fe882b.png",
     "index.html": "/Portfolio/index.html",
     "main.d9b7b59d.css.map": "/Portfolio/static/css/main.d9b7b59d.css.map",
-    "main.49bb3f60.js.map": "/Portfolio/static/js/main.49bb3f60.js.map",
-    "453.854e04de.chunk.js.map": "/Portfolio/static/js/453.854e04de.chunk.js.map"
+    "main.87827b22.js.map": "/Portfolio/static/js/main.87827b22.js.map",
+    "453.8530122b.chunk.js.map": "/Portfolio/static/js/453.8530122b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9b7b59d.css",
-    "static/js/main.49bb3f60.js"
+    "static/js/main.87827b22.js"
   ]
 }
