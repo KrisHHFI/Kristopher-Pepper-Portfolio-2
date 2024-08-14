@@ -2,6 +2,10 @@
 
 <img src="PorfolioPromo.gif"/>
 
+### Launch the App
+
+- Check out the live project [here!](https://krishhfi.github.io/Portfolio/#)
+
 <br>
 
 ### About
@@ -10,10 +14,6 @@
 - Made in the summer of 2024
 
 <br>
-
-### Launch the App
-
-- Check out the web app [here!](https://krishhfi.github.io/Portfolio/#)
 
 Or run it locally
 
