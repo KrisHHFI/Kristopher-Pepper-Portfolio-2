@@ -1,6 +1,6 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, ColourPortraitSources, ClockProjectImage, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
 
 export const AboutPageContent = () => {
     return (
@@ -25,7 +25,7 @@ export const AboutPageContent = () => {
                         },
                     ]}
                 />
-                
+
             </div>
         </>
     );
@@ -36,7 +36,7 @@ export const CodingPageContent = () => {
         <>
             <div className="Page-Container">
                 <PageItem
-                    PageItemTitle={"TIC TAC FARM"}
+                    PageItemTitle={"Tic Tac Farm"}
                     imageSources={TicTacFarmImage}
                     noArrows={true}
                     noItemBottomPadding={true}
@@ -53,7 +53,7 @@ export const CodingPageContent = () => {
                 />
                 {/* Divider */}
                 <PageItem
-                    PageItemTitle={"REACT WEATHER APP"}
+                    PageItemTitle={"React Weather App"}
                     imageSources={WeatherAppImage}
                     noArrows={true}
                     noItemBottomPadding={true}
@@ -82,6 +82,40 @@ export const CodingPageContent = () => {
                     textSections={[
                         {
                             text: `A HTML browser clock. With this project I wanted to see how far I could go with CSS styling. Note, I did not consider different screen sizes, so the clock's size static.\n\nTechnologies: CSS, HTML.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"Stockplotter Pro"}
+                    imageSources={StockPlotterPro}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    hasButton={true}
+                    projectURL={"https://github.com/KrisHHFI/Stockplotter-Pro"}
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `My final university project where I made a mobile app which enables the user to find and save listed US companies. Uses Polygon.io to get live stock data. Also, features a cork board, theme and language options.\n\nTechnologies: CSS, Expo Go, JavaScript, Polygon.io, React Native.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"CPP-Password-Generator-3"}
+                    imageSources={CppPasswordGenerator}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    hasButton={true}
+                    projectURL={"https://github.com/KrisHHFI/CPP-Password-Generator-3"}
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `My third iteration of creating a C++ password generator. Features a GUI and generates passwords consisting of characters, letters and symbols.\n\nTechnologies: C++.`
                         },
                     ]}
                 />
