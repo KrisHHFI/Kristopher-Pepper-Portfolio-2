@@ -24,7 +24,6 @@ a {
   justify-content: center;
   padding: 10px 2vw 10px 2vw;
   margin-bottom: 10px;
-  margin-top: 10px;
   text-align: center;
   white-space: pre-wrap;
 }
@@ -80,24 +79,11 @@ a {
   opacity: 0.3;
 }
 
-
-.Project-Link {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  transition: opacity 0.3s ease;
-}
-
-.Project-Link:hover {
-  background-color: black;
-}
-
 .link-Icon {
-  padding: 5px;
+  padding-left: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
-  height: 2vw;
-  min-height: 25px;
-  min-width: 25px;
-  width: 2vw;
+  height: 20px;
+  width: auto;
 }
 
 .link-Icon:hover {
@@ -117,7 +103,7 @@ a {
   right: 0;
 }
 
-.PageItemTitle {
+.PageItemTitleContainer {
   background-color: black;
   font-size: clamp(18px, 4vw, 30px);
   font-weight: bold;
@@ -222,7 +208,7 @@ a {
 }
 
 .Navigation-KPText {
-  min-width: 50px;
+  min-width: 30px;
   width: 20%;
 }
 
@@ -240,10 +226,6 @@ a {
 
 /* ---------- View Ports ----------*/
 @media screen and (max-width: 900px) {
-  .page-Item:hover .PageItemTitle {
-    opacity: 0.5;
-  }
-
   .Page-Social-Icon-Container {
     display: block;
   }
@@ -295,6 +277,11 @@ a {
   .Navigation-Child-Hidden {
     visibility: hidden;
     position: absolute;
+  }
+
+  .PageItemTitleContainer {
+    left: 0px;
+    top: 0px;
   }
 
   .Wrapper {

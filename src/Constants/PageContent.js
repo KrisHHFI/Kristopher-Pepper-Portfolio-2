@@ -37,13 +37,12 @@ export const CodingPageContent = () => {
             <div className="Page-Container">
                 <PageItem
                     PageItemTitle={"Tic Tac Farm"}
+                    projectURL={"https://github.com/KrisHHFI/Tic-Tac-Farm-Android-App"}
                     imageSources={TicTacFarmImage}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
-                    hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/Tic-Tac-Farm-Android-App"}
                     noArrows={true}
                     textSections={[
                         {
@@ -54,13 +53,12 @@ export const CodingPageContent = () => {
                 {/* Divider */}
                 <PageItem
                     PageItemTitle={"React Weather App"}
+                    projectURL={"https://github.com/KrisHHFI/React-Weather-App"}
                     imageSources={WeatherAppImage}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
-                    hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/React-Weather-App"}
                     noArrows={true}
                     textSections={[
                         {
@@ -71,13 +69,12 @@ export const CodingPageContent = () => {
                 {/* Divider */}
                 <PageItem
                     PageItemTitle={"Clock App"}
+                    projectURL={"https://github.com/KrisHHFI/NextJS-Clock-App"}
                     imageSources={ClockProjectImage}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
-                    hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/NextJS-Clock-App"}
                     noArrows={true}
                     textSections={[
                         {
@@ -88,13 +85,12 @@ export const CodingPageContent = () => {
                 {/* Divider */}
                 <PageItem
                     PageItemTitle={"Stockplotter Pro"}
+                    projectURL={"https://github.com/KrisHHFI/Stockplotter-Pro"}
                     imageSources={StockPlotterPro}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
-                    hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/Stockplotter-Pro"}
                     noArrows={true}
                     textSections={[
                         {
@@ -105,13 +101,12 @@ export const CodingPageContent = () => {
                 {/* Divider */}
                 <PageItem
                     PageItemTitle={"CPP-Password-Generator-3"}
+                    projectURL={"https://github.com/KrisHHFI/CPP-Password-Generator-3"}
                     imageSources={CppPasswordGenerator}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
-                    hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/CPP-Password-Generator-3"}
                     noArrows={true}
                     textSections={[
                         {

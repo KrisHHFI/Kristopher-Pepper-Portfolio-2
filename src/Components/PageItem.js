@@ -8,7 +8,6 @@ const PageItem = ({
   noArrows,
   textSections = [],
   noItemBottomPadding,
-  hasButton,
   projectURL,
   textBoxTopPadding
 }) => {
@@ -26,7 +25,20 @@ const PageItem = ({
   return (
     <div>
       <div className={`page-Item ${noItemBottomPadding ? 'page-Item-No-Padding' : ''}`}>
-        {PageItemTitle && <div className="PageItemTitle">{PageItemTitle}</div>}
+        {PageItemTitle && (
+          <div className="PageItemTitleContainer">
+            {PageItemTitle}
+            {projectURL && (
+              <a href={projectURL} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={ComponentImageSources.link}
+                  alt="Link icon"
+                  className="link-Icon"
+                />
+              </a>
+            )}
+          </div>
+        )}
         {images.length === 0 && textSections.length > 0 && (
           <div>
             {textSections.map((section, index) => (
@@ -65,15 +77,6 @@ const PageItem = ({
             onClick={handleNext}
           />
         )}
-        {hasButton && projectURL && (
-          <a className="Project-Link" href={projectURL} target="_blank" rel="noopener noreferrer">
-            <img
-              src={ComponentImageSources.link}
-              alt="Link icon"
-              className="link-Icon"
-            />
-          </a>
-        )}
       </div>
     </div>
   );
@@ -84,7 +87,6 @@ PageItem.propTypes = {
   PageItemTitle: PropTypes.string,
   noArrows: PropTypes.bool,
   noItemBottomPadding: PropTypes.bool,
-  hasButton: PropTypes.bool,
   projectURL: PropTypes.string,
   textSections: PropTypes.arrayOf(
     PropTypes.shape({
@@ -103,7 +105,6 @@ PageItem.defaultProps = {
   PageItemTitle: '',
   noArrows: false,
   noItemBottomPadding: false,
-  hasButton: false,
   projectURL: '',
   textSections: [],
   textBoxTopPadding: false
