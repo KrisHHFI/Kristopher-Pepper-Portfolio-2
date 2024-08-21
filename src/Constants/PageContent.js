@@ -70,18 +70,18 @@ export const CodingPageContent = () => {
                 />
                 {/* Divider */}
                 <PageItem
-                    PageItemTitle={"CSS Clock Project"}
+                    PageItemTitle={"Clock App"}
                     imageSources={ClockProjectImage}
                     noArrows={true}
                     noItemBottomPadding={true}
                 />
                 <PageItem
                     hasButton={true}
-                    projectURL={"https://github.com/KrisHHFI/Clock"}
+                    projectURL={"https://github.com/KrisHHFI/NextJS-Clock-App"}
                     noArrows={true}
                     textSections={[
                         {
-                            text: `A HTML browser clock. With this project I wanted to see how far I could go with CSS styling. Note, I did not consider different screen sizes, so the clock's size static.\n\nTechnologies: CSS, HTML.`
+                            text: `A browser based clock app. Within the Next.js framework I built ontop of a previous clock project. The clock can be clicked, which reveals the working gears beneath. Works with all screen dimensions.\n\nTechnologies: CSS, HTML, JavaScript, Next.js.`
                         },
                     ]}
                 />
