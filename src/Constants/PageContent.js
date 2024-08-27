@@ -1,6 +1,6 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage, ProjectPorfolio } from '../Constants/ImageSources';
 
 export const AboutPageContent = () => {
     return (
@@ -100,7 +100,7 @@ export const CodingPageContent = () => {
                 />
                 {/* Divider */}
                 <PageItem
-                    PageItemTitle={"CPP-Password-Generator-3"}
+                    PageItemTitle={"CPP Password Generator 3"}
                     projectURL={"https://github.com/KrisHHFI/CPP-Password-Generator-3"}
                     imageSources={CppPasswordGenerator}
                     noArrows={true}
@@ -111,6 +111,22 @@ export const CodingPageContent = () => {
                     textSections={[
                         {
                             text: `My third iteration of creating a C++ password generator. Features a GUI and generates passwords consisting of characters, letters and symbols.\n\nTechnologies: C++.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"This Project"}
+                    projectURL={"https://github.com/KrisHHFI/Portfolio"}
+                    imageSources={ProjectPorfolio}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `I made this portfolio website using React and I am hosting it using GitHub Pages.\n\nTechnologies: CSS, JavaScript, React.`
                         },
                     ]}
                 />

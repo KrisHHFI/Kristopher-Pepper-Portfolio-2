@@ -39,25 +39,23 @@ const PageItem = ({
             )}
           </div>
         )}
-        {images.length === 0 && textSections.length > 0 && (
-          <div>
-            {textSections.map((section, index) => (
-              <div
-                className={`page-Item-Text-Box ${index === 0 && textBoxTopPadding ? 'page-Item-Top-Padding' : ''}`}
-                key={index}
-              >
-                {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
-                {Array.isArray(section.text) ? (
-                  section.text.map((text, textIndex) => (
-                    <div key={textIndex}>{text}</div>
-                  ))
-                ) : (
-                  <div>{section.text}</div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+        {images.length === 0 && textSections.length > 0 &&
+          textSections.map((section, index) => (
+            <div
+              className={`page-Item-Text-Box ${index === 0 && textBoxTopPadding ? 'page-Item-Top-Padding' : ''}`}
+              key={index}
+            >
+              {section.title && <div className="page-Item-Text-Title">{section.title}</div>}
+              {Array.isArray(section.text) ? (
+                section.text.map((text, textIndex) => (
+                  <div key={textIndex}>{text}</div>
+                ))
+              ) : (
+                <div>{section.text}</div>
+              )}
+            </div>
+          ))
+        }
         {!noArrows && images.length > 1 && (
           <img
             src={ComponentImageSources.leftArrow}

@@ -41,6 +41,7 @@ import CameraIcon from '../Assets/Images/CameraIcon.png';
 import link from '../Assets/Images/link.png';
 import stockPlotterPro from '../Assets/Images/Stock-Plotter-Project.png';
 import cppPasswordGenerator from '../Assets/Images/CCPPasswordGenerator.png';
+import projectPorfolio from '../Assets/Images/ProjectPorfolio.gif';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -105,3 +106,4 @@ export const TicTacFarmImage = { ticTacFarm: TicTacFarm };
 export const WeatherAppImage = { weatherApp: WeatherApp };
 export const StockPlotterPro = { stockPlotterPro: stockPlotterPro };
 export const CppPasswordGenerator = { cppPasswordGenerator: cppPasswordGenerator };
+export const ProjectPorfolio = { projectPorfolio: projectPorfolio };
