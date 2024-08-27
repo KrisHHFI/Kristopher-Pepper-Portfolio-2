@@ -1,6 +1,6 @@
 # Portfolio
 
-<img src="PorfolioPromo.gif"/>
+<img src="PortfolioPromo.gif"/>
 
 ### Launch the App
 
