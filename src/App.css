@@ -219,16 +219,28 @@ a {
   width: 40%;
 }
 
+.Menu-Icon {
+  display: none;
+}
+
 .Wrapper {
   display: flex;
   height: 100%;
   width: 100%;
 }
 
+.Hidden-By-Default {
+  display: none;
+}
+
 /* ---------- View Ports ----------*/
 @media screen and (max-width: 900px) {
   .Page-Social-Icon-Container {
     display: block;
+  }
+
+  .Hidden-In-Mobile-View {
+    display: none;
   }
 
   .Navigation-Social-Icon-Container {
@@ -248,15 +260,24 @@ a {
     width: 3vw;
   }
 
+  .Menu-Icon {
+    display: inline;
+    height: 30px;
+    position:absolute;
+    right: 15px;
+    top: 10px;
+  }
+
   .carouselArrowImage {
     opacity: 0.5;
   }
 
   .Navigation-Container {
-    flex-direction: row;
-    height: fit-content;
-    padding: 15px 5px 40px 5px;
-    position: relative;
+    background-color: black;
+    height: 50px;
+    z-index: 1;
+    flex: none;
+    margin-bottom: 10px;
   }
 
   .Navigation-Child-1 {
@@ -287,5 +308,11 @@ a {
 
   .Wrapper {
     flex-direction: column;
+  }
+
+  .Mobile-Navigation-Logo {
+    display: inline;
+    height: 20px;
+    width: auto;
   }
 }

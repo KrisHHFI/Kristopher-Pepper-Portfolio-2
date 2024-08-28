@@ -43,6 +43,8 @@ import stockPlotterPro from '../Assets/Images/Stock-Plotter-Project.png';
 import cppPasswordGenerator from '../Assets/Images/CCPPasswordGenerator.png';
 import projectPorfolio from '../Assets/Images/ProjectPorfolio.gif';
 import nextjsTailwindSite from '../Assets/Images/NextjsTailwindSite.gif';
+import menuIcon from '../Assets/Images/MenuIcon.png';
+import kpWhite from '../Assets/Images/KPWhite.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -98,7 +100,9 @@ export const SocialIconImageSources = [
 
 export const NavigationImageSources = {
     kpLogo,
+    kpWhite,
     portfolioText,
+    menuIcon,
 };
 
 export const AboutPageImageSource = { me: me };
