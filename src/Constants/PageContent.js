@@ -1,6 +1,6 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage, ProjectPorfolio } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage, ProjectPorfolio, NextjsTailwindSite } from '../Constants/ImageSources';
 
 export const AboutPageContent = () => {
     return (
@@ -79,6 +79,22 @@ export const CodingPageContent = () => {
                     textSections={[
                         {
                             text: `A browser based clock app. Within the Next.js framework I built ontop of a previous clock project. The clock can be clicked, which reveals the working gears beneath. Works with all screen dimensions.\n\nTechnologies: CSS, HTML, JavaScript, Next.js.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"NextJS Tailwind CSS Site"}
+                    projectURL={"https://github.com/KrisHHFI/NextJS-Tailwind-CSS-Site"}
+                    imageSources={NextjsTailwindSite}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `A light-hearted browser app.\n\nTechnologies: Next.js, React, Tailwind CSS, TypeScript.`
                         },
                     ]}
                 />
