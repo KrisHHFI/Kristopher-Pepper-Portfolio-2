@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ffbe7a44.css",
-    "main.js": "/Portfolio/static/js/main.886ebf63.js",
+    "main.js": "/Portfolio/static/js/main.b1c98e8a.js",
     "static/js/453.8530122b.chunk.js": "/Portfolio/static/js/453.8530122b.chunk.js",
     "static/media/Colour2.jpg": "/Portfolio/static/media/Colour2.29d8071ff7dcc4ce6310.jpg",
     "static/media/Colour3.jpg": "/Portfolio/static/media/Colour3.2cdd58892908563e5dcb.jpg",
     "static/media/BW1.jpg": "/Portfolio/static/media/BW1.1d092229b294967c5016.jpg",
     "static/media/BW3.jpg": "/Portfolio/static/media/BW3.ebb9f1b0279238a1a568.jpg",
+    "static/media/NextjsTailwindSite.gif": "/Portfolio/static/media/NextjsTailwindSite.19c09e42311429bcb061.gif",
     "static/media/BW2.jpg": "/Portfolio/static/media/BW2.53bf575f21c682cae1cb.jpg",
     "static/media/ProjectPorfolio.gif": "/Portfolio/static/media/ProjectPorfolio.c6dde5a01fce4ce788ff.gif",
     "static/media/WeatherApp.png": "/Portfolio/static/media/WeatherApp.b5f2ee4e1687ea4900dd.png",
@@ -47,11 +48,11 @@
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.a31ce073b575b0fe882b.png",
     "index.html": "/Portfolio/index.html",
     "main.ffbe7a44.css.map": "/Portfolio/static/css/main.ffbe7a44.css.map",
-    "main.886ebf63.js.map": "/Portfolio/static/js/main.886ebf63.js.map",
+    "main.b1c98e8a.js.map": "/Portfolio/static/js/main.b1c98e8a.js.map",
     "453.8530122b.chunk.js.map": "/Portfolio/static/js/453.8530122b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffbe7a44.css",
-    "static/js/main.886ebf63.js"
+    "static/js/main.b1c98e8a.js"
   ]
 }
