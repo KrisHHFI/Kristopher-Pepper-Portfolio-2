@@ -43,6 +43,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -59,6 +60,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -75,6 +77,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -91,6 +94,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -107,6 +111,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -123,6 +128,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -156,10 +162,12 @@ export const PhotographyPageContent = () => {
         <>
             <div className="Page-Container">
                 <PageItem
+                    hasBottomDivider={true}
                     imageSources={BWPortraitImageSources}
                     PageItemTitle={"BW PORTRAITS"}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     imageSources={ColourPortraitSources}
                     PageItemTitle={"COLOUR PORTRAITS"}
                 />
