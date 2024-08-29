@@ -34,7 +34,7 @@ import WeatherApp from '../Assets/Images/WeatherApp.png';
 import GitHub from '../Assets/Images/GitHub.png';
 import LinkedIn from '../Assets/Images/LinkedIn.png';
 import TicTacFarm from '../Assets/Images/TicTacFarm.png';
-import kpLogo from '../Assets/Images/KP.png';
+import kpBlack from '../Assets/Images/KPBlack.png';
 import portfolioText from '../Assets/Images/Portfolio.png';
 import clockProject from '../Assets/Images/ClockProject.gif';
 import CameraIcon from '../Assets/Images/CameraIcon.png';
@@ -99,7 +99,7 @@ export const SocialIconImageSources = [
 
 
 export const NavigationImageSources = {
-    kpLogo,
+    kpBlack,
     kpWhite,
     portfolioText,
     menuIcon,

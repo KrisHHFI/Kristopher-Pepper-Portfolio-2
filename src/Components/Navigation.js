@@ -6,7 +6,7 @@ export default function Navigation({ activeLink, onLinkClick }) {
     return (
         <div className="Navigation-Container">
             <div className="Navigation-Child-1 Navigation-Child">
-                <img src={NavigationImageSources.kpLogo} alt="Company Logo" className="Navigation-KPText Hidden-In-Mobile-View" />
+                <img src={NavigationImageSources.kpBlack} alt="Company Logo" className="Navigation-KPText Hidden-In-Mobile-View" />
                 <img src={NavigationImageSources.kpWhite} alt="Company Logo" className="Mobile-Navigation-Logo Hidden-By-Default" />
             </div>
             <img src={NavigationImageSources.menuIcon} alt="Menu icon" className="Menu-Icon" />
