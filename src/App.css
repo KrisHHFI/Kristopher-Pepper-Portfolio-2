@@ -5,8 +5,10 @@ a {
 
 .Content-Container {
   background-color: transparent;
+  border-left: 2px solid rgb(219, 219, 219);;
   display: flex;
   flex: 1;
+  padding-left: 10px;
   min-height: 100vh;
 }
 
@@ -344,5 +346,11 @@ a {
     height: 20px;
     width: auto;
     z-index: 1;
+  }
+
+  .Content-Container {
+    border-left: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 }
