@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavigationImageSources } from '../Constants/ImageSources';
 import SocialIcons from './SocialIcons';
 
@@ -11,6 +11,22 @@ export default function Navigation({ activeLink, onLinkClick }) {
         onLinkClick(link); // Trigger the parent onLinkClick function
         setIsMenuVisible(false); // Hide the mobile menu
     };
+
+    // Effect to hide the mobile menu if the screen width exceeds a certain value
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 900) {
+                setIsMenuVisible(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div className="Navigation-Container">
@@ -34,7 +50,7 @@ export default function Navigation({ activeLink, onLinkClick }) {
                     </div>
                 </div>
             </div>
-            <div className="Navigation-Social-Icon-Container">
+            <div className="Navigation-Social-Icon-Container Hidden-In-Mobile-View">
                 <SocialIcons />
             </div>
             <img 
