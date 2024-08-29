@@ -53,14 +53,14 @@ export default function Navigation({ activeLink, onLinkClick }) {
             <div className="Navigation-Social-Icon-Container Hidden-In-Mobile-View">
                 <SocialIcons />
             </div>
-            <img 
-                src={NavigationImageSources.menuIcon} 
-                alt="Menu icon" 
-                className="Menu-Icon" 
+            <img
+                src={NavigationImageSources.menuIcon}
+                alt="Menu icon"
+                className="Menu-Icon"
                 onClick={() => setIsMenuVisible(!isMenuVisible)}
             />
-            <div 
-                className="Mobile-Nav-Menu Hidden-By-Default" 
+            <div
+                className="Mobile-Nav-Menu Hidden-By-Default"
                 style={{ display: isMenuVisible ? 'block' : 'none' }}
             >
                 <div className="Mobile-Nav-Links-Container">
@@ -74,6 +74,7 @@ export default function Navigation({ activeLink, onLinkClick }) {
                         <a href="#" onClick={() => handleLinkClick('About')}>About</a>
                     </div>
                 </div>
+                <SocialIcons mobileNav={true} />
             </div>
         </div>
     );

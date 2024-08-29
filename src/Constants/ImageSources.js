@@ -45,6 +45,9 @@ import projectPorfolio from '../Assets/Images/ProjectPorfolio.gif';
 import nextjsTailwindSite from '../Assets/Images/NextjsTailwindSite.gif';
 import menuIcon from '../Assets/Images/MenuIcon.png';
 import kpWhite from '../Assets/Images/KPWhite.png';
+import CameraIconWhite from '../Assets/Images/CameraIconWhite.png';
+import LinkedInWhite from '../Assets/Images/LinkedInWhite.png';
+import GitHubWhite from '../Assets/Images/GitHubWhite.png';
 
 export const BWPortraitImageSources = {
     bw1,
@@ -97,6 +100,11 @@ export const SocialIconImageSources = [
     { src: LinkedIn, alt: 'LinkedIn Icon', href: 'https://www.linkedin.com/in/kristopher-pepper-824184136/' },
 ];
 
+export const MobileNavSocialIconImageSources = [
+    { src: CameraIconWhite, alt: 'CameraIcon Icon', href: 'https://www.shutterstock.com/g/Kristopher+Pepper?rid=263519982' },
+    { src: GitHubWhite, alt: 'GitHub social icon', href: 'https://github.com/KrisHHFI' },
+    { src: LinkedInWhite, alt: 'LinkedIn Icon', href: 'https://www.linkedin.com/in/kristopher-pepper-824184136/' },
+];
 
 export const NavigationImageSources = {
     kpBlack,
