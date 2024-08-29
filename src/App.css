@@ -174,14 +174,14 @@ a {
 }
 
 .Navigation-Child-Item-active {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
   font-weight: bold;
 }
 
 .Navigation-Child-Item:hover {
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
 }
@@ -234,7 +234,7 @@ a {
 }
 
 .Menu-Icon:hover + .Mobile-Nav-Menu,
-.Navigation-Menu:hover {
+.Mobile-Nav-Menu:hover {
   display: block;
 }
 
