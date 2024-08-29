@@ -318,10 +318,6 @@ a {
     margin-bottom: 10px;
   }
 
-  .Navigation-Child-1 {
-    flex: 1;
-  }
-
   .Navigation-Child-3 {
     flex: 5;
   }
@@ -332,11 +328,6 @@ a {
     height: 100%;
     margin: 0 !important;
     width: 100% !important;
-  }
-
-  .Navigation-Child-Hidden {
-    visibility: hidden;
-    position: absolute;
   }
 
   .PageItemTitleContainer {

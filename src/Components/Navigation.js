@@ -30,14 +30,14 @@ export default function Navigation({ activeLink, onLinkClick }) {
 
     return (
         <div className="Navigation-Container">
-            <div className="Navigation-Child-1 Navigation-Child">
+            <div className="Navigation-Child">
                 <img src={NavigationImageSources.kpBlack} alt="Company Logo" className="Navigation-KPText Hidden-In-Mobile-View" />
                 <img src={NavigationImageSources.kpWhite} alt="Company Logo" className="Mobile-Navigation-Logo Hidden-By-Default" />
             </div>
-            <div className="Navigation-Child Navigation-Child-Hidden">
+            <div className="Navigation-Child Hidden-In-Mobile-View">
                 <img src={NavigationImageSources.portfolioText} alt="Company Text" className="Navigation-PortfolioText" />
             </div>
-            <div className="Navigation-Child-3 Navigation-Child Navigation-Child-Hidden">
+            <div className="Navigation-Child Hidden-In-Mobile-View">
                 <div className="Navigation-Item-Container">
                     <div className={`Navigation-Child-Item ${activeLink === 'Coding' ? 'Navigation-Child-Item-active' : ''}`}>
                         <a href="#" onClick={() => handleLinkClick('Coding')}>Coding</a>
