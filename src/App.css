@@ -13,9 +13,10 @@ a {
 }
 
 .page-Item-Bottom-Divider {
-  border: 1px solid rgb(219, 219, 219);;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin-bottom: 25px;
+  margin-top: 25px;
   width: 90%;
-
 }
 
 .Page-Container {
@@ -31,7 +32,6 @@ a {
   font-size: clamp(16px, 4vw, 18px);
   justify-content: center;
   padding: 10px 2vw 10px 2vw;
-  margin-bottom: 10px;
   text-align: center;
   white-space: pre-wrap;
   width: 100%;
@@ -69,7 +69,6 @@ a {
   height: max-content;
   justify-content: center;
   margin: auto;
-  margin-bottom: 30px;
   min-height: 50px;
   overflow: hidden;
   position: relative;

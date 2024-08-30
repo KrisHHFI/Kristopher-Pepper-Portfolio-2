@@ -7,7 +7,6 @@ const PageItem = ({
   PageItemTitle,
   noArrows,
   textSections = [],
-  noItemBottomPadding,
   projectURL,
   textBoxTopPadding,
   hasBottomDivider // New prop
@@ -25,7 +24,7 @@ const PageItem = ({
 
   return (
     <div>
-      <div className={`page-Item ${noItemBottomPadding ? 'page-Item-No-Padding' : ''}`}>
+      <div className={`page-Item`}>
         {PageItemTitle && (
           <div className="PageItemTitleContainer">
             {PageItemTitle}
@@ -87,7 +86,6 @@ PageItem.propTypes = {
   imageSources: PropTypes.object,
   PageItemTitle: PropTypes.string,
   noArrows: PropTypes.bool,
-  noItemBottomPadding: PropTypes.bool,
   projectURL: PropTypes.string,
   textSections: PropTypes.arrayOf(
     PropTypes.shape({
@@ -106,7 +104,6 @@ PageItem.defaultProps = {
   imageSources: {},
   PageItemTitle: '',
   noArrows: false,
-  noItemBottomPadding: false,
   projectURL: '',
   textSections: [],
   textBoxTopPadding: false,
