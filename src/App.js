@@ -6,8 +6,13 @@ import SocialIcons from './Components/SocialIcons';
 
 function App() {
   const [activeLink, setActiveLink] = useState('Coding');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    // Trigger loading state
+    setLoading(true);
+
+    // Set the document title based on the active link
     switch (activeLink) {
       case 'Coding':
         document.title = 'Coding - My Portfolio';
@@ -21,6 +26,14 @@ function App() {
       default:
         document.title = 'React App';
     }
+
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 1 second delay
+
+    // Clean up the timer
+    return () => clearTimeout(timer);
   }, [activeLink]);
 
   const handleLinkClick = (linkName) => {
@@ -41,10 +54,22 @@ function App() {
   };
 
   return (
-    <div className="Wrapper">
+    <div className="Wrapper" style={{ fontFamily: 'Arial, sans-serif' }}>
       <Navigation activeLink={activeLink} onLinkClick={handleLinkClick} />
       <div className="Content-Container">
-        {renderContent()}
+        {loading ? (
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+            width: "100%",
+          }}>
+            Loading...
+          </div>
+        ) : (
+          renderContent()
+        )}
       </div>
       <div className="Page-Social-Icon-Container">
         <SocialIcons />
