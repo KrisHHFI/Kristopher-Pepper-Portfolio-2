@@ -5,7 +5,7 @@ import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourP
 export const AboutPageContent = () => {
     return (
         <>
-            <div className="Page-Container">
+            <div>
                 <PageItem
                     bottomDividerIsWhite={true}
                     hasBottomDivider={true}
@@ -47,7 +47,7 @@ export const AboutPageContent = () => {
 export const CodingPageContent = () => {
     return (
         <>
-            <div className="Page-Container">
+            <div>
                 <PageItem
                     PageItemTitle={"Tic Tac Farm"}
                     projectURL={"https://github.com/KrisHHFI/Tic-Tac-Farm-Android-App"}
@@ -174,7 +174,7 @@ export const CodingPageContent = () => {
 export const PhotographyPageContent = () => {
     return (
         <>
-            <div className="Page-Container">
+            <div>
                 <PageItem
                     hasBottomDivider={true}
                     imageSources={BWPortraitImageSources}

@@ -19,12 +19,6 @@ a {
   width: 90%;
 }
 
-.Page-Container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .page-Item-Text-Box {
   background-color: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
@@ -44,12 +38,6 @@ a {
 
 .page-Item-Text-Box-Container {
   padding-top: 60px;
-}
-
-.page-Item-Text-Title {
-  font-size: clamp(18px, 4vw, 22px);
-  font-style: italic;
-  padding-bottom: 10px;
 }
 
 .carouselArrowImage {
@@ -74,10 +62,6 @@ a {
   overflow: hidden;
   position: relative;
   width: 100%;
-}
-
-.page-Item-No-Padding {
-  margin-bottom: 0px;
 }
 
 .page-Item .carouselArrowImage:hover {
@@ -115,6 +99,7 @@ a {
 .PageItemTitleContainer {
   background-color: black;
   font-size: clamp(18px, 4vw, 30px);
+  font-style: italic;
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
