@@ -9,7 +9,7 @@ export const AboutPageContent = () => {
                 <PageItem
                     bottomDividerIsWhite={true}
                     hasBottomDivider={true}
-                    PageItemTitle={"BACKGROUND"}
+                    PageItemTitle={"Background"}
                     textBoxTopPadding={true}
                     noArrows={true}
                     textSections={[
@@ -178,17 +178,17 @@ export const PhotographyPageContent = () => {
                 <PageItem
                     hasBottomDivider={true}
                     imageSources={BWPortraitImageSources}
-                    PageItemTitle={"BW PORTRAITS"}
+                    PageItemTitle={"BW Portraits"}
                 />
                 <PageItem
                     hasBottomDivider={true}
                     imageSources={ColourPortraitSources}
-                    PageItemTitle={"COLOUR PORTRAITS"}
+                    PageItemTitle={"Colour Portraits"}
                 />
                 <PageItem
                     hasBottomDivider={true}
                     imageSources={BandImageSources}
-                    PageItemTitle={"BAND PORTRAITS"}
+                    PageItemTitle={"Band Portraits"}
                 />
             </div>
         </>
