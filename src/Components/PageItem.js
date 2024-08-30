@@ -9,7 +9,8 @@ const PageItem = ({
   textSections = [],
   projectURL,
   textBoxTopPadding,
-  hasBottomDivider // New prop
+  hasBottomDivider, // Existing prop
+  bottomDividerIsWhite // New prop
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = Object.values(imageSources);
@@ -76,7 +77,9 @@ const PageItem = ({
           />
         )}
         {/* Conditionally render a bottom divider if hasBottomDivider is true */}
-        {hasBottomDivider && <div className="page-Item-Bottom-Divider"></div>}
+        {hasBottomDivider && (
+          <div className={`page-Item-Bottom-Divider ${bottomDividerIsWhite ? 'white-Divider' : ''}`}></div>
+        )}
       </div>
     </div>
   );
@@ -97,7 +100,8 @@ PageItem.propTypes = {
     })
   ),
   textBoxTopPadding: PropTypes.bool,
-  hasBottomDivider: PropTypes.bool // New prop type
+  hasBottomDivider: PropTypes.bool, // Existing prop type
+  bottomDividerIsWhite: PropTypes.bool // New prop type
 };
 
 PageItem.defaultProps = {
@@ -107,7 +111,8 @@ PageItem.defaultProps = {
   projectURL: '',
   textSections: [],
   textBoxTopPadding: false,
-  hasBottomDivider: false // New default value
+  hasBottomDivider: false, // Existing default value
+  bottomDividerIsWhite: false // New default value
 };
 
 export default PageItem;
