@@ -7,7 +7,7 @@ export const AboutPageContent = () => {
         <>
             <div className="Page-Container">
                 <PageItem
-                bottomDividerIsWhite={true}
+                    bottomDividerIsWhite={true}
                     hasBottomDivider={true}
                     PageItemTitle={"BACKGROUND"}
                     textBoxTopPadding={true}
@@ -30,6 +30,7 @@ export const AboutPageContent = () => {
                     ]}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -157,6 +158,7 @@ export const CodingPageContent = () => {
                     noItemBottomPadding={true}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     noArrows={true}
                     textSections={[
                         {
@@ -184,6 +186,7 @@ export const PhotographyPageContent = () => {
                     PageItemTitle={"COLOUR PORTRAITS"}
                 />
                 <PageItem
+                    hasBottomDivider={true}
                     imageSources={BandImageSources}
                     PageItemTitle={"BAND PORTRAITS"}
                 />

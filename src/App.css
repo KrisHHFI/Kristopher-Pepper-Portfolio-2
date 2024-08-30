@@ -27,6 +27,7 @@ a {
 
 .page-Item-Text-Box {
   background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   font-size: clamp(16px, 4vw, 18px);
