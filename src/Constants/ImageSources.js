@@ -31,6 +31,7 @@ import colour7 from '../Assets/Images/Colour7.jpg';
 import colour8 from '../Assets/Images/Colour8.jpg';
 import colour9 from '../Assets/Images/Colour9.jpg';
 import cppPasswordGenerator from '../Assets/Images/CCPPasswordGenerator.png';
+import fullStackPromoImage from '../Assets/Images/FullStackPromoImage.gif';
 import GitHub from '../Assets/Images/GitHub.png';
 import GitHubWhite from '../Assets/Images/GitHubWhite.png';
 import kpBlack from '../Assets/Images/KPBlack.png';
@@ -115,6 +116,7 @@ export const NavigationImageSources = {
 
 export const AboutPageImageSource = { me: me };
 export const ClockProjectImage = { clockProject: clockProject };
+export const FullStackPromoImage = { fullStackPromoImage: fullStackPromoImage };
 export const TicTacFarmImage = { ticTacFarm: TicTacFarm };
 export const WeatherAppImage = { weatherApp: WeatherApp };
 export const StockPlotterPro = { stockPlotterPro: stockPlotterPro };

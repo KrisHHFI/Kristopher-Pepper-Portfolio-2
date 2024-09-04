@@ -1,6 +1,6 @@
 import React from 'react';
 import PageItem from '../Components/PageItem';
-import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage, ProjectPorfolio, NextjsTailwindSite } from '../Constants/ImageSources';
+import { BandImageSources, BWPortraitImageSources, CppPasswordGenerator, ColourPortraitSources, ClockProjectImage, FullStackPromoImage, StockPlotterPro, TicTacFarmImage, WeatherAppImage, ProjectPorfolio, NextjsTailwindSite } from '../Constants/ImageSources';
 
 export const AboutPageContent = () => {
     return (
@@ -61,6 +61,23 @@ export const CodingPageContent = () => {
                     textSections={[
                         {
                             text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, Expo Go, JavaScript, React Native.`
+                        },
+                    ]}
+                />
+                {/* Divider */}
+                <PageItem
+                    PageItemTitle={"Full Stack Project"}
+                    projectURL={"https://github.com/KrisHHFI/React-Full-Stack-Project"}
+                    imageSources={FullStackPromoImage}
+                    noArrows={true}
+                    noItemBottomPadding={true}
+                />
+                <PageItem
+                    hasBottomDivider={true}
+                    noArrows={true}
+                    textSections={[
+                        {
+                            text: `A browser app which enables the user to create, edit and delete notes. The notes are saved to persistent storage.\n\nTechnologies: CSS, JavaScript, React, SQLite.`
                         },
                     ]}
                 />
