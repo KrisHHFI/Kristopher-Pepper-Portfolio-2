@@ -60,7 +60,7 @@ export const CodingPageContent = () => {
                     noArrows={true}
                     textSections={[
                         {
-                            text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, Expo Go, JavaScript, React Native.`
+                            text: `A farm themed Tic-tac-toe game published on the Google Play Store. The game works on both Android and IOS, and it currently has over 2000 unique installs.\n\nTechnologies: CSS, Expo Go, JavaScript, React Native, SQLite.`
                         },
                     ]}
                 />
@@ -77,7 +77,7 @@ export const CodingPageContent = () => {
                     noArrows={true}
                     textSections={[
                         {
-                            text: `A browser app which enables the user to create, edit and delete notes. The notes are saved to persistent storage.\n\nTechnologies: CSS, JavaScript, React, SQLite.`
+                            text: `A browser app which enables the user to create, edit and delete notes. The notes are saved to persistent storage.\n\nTechnologies: CSS, Express.js JavaScript, React, SQLite.`
                         },
                     ]}
                 />
