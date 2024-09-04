@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e9ad83e4.css",
-    "main.js": "/Portfolio/static/js/main.a250d9bb.js",
+    "main.js": "/Portfolio/static/js/main.969721b3.js",
     "static/js/453.8530122b.chunk.js": "/Portfolio/static/js/453.8530122b.chunk.js",
     "static/media/NextjsTailwindSite.gif": "/Portfolio/static/media/NextjsTailwindSite.19c09e42311429bcb061.gif",
     "static/media/ProjectPorfolio.gif": "/Portfolio/static/media/ProjectPorfolio.c6dde5a01fce4ce788ff.gif",
@@ -39,6 +39,7 @@
     "static/media/BW9.jpg": "/Portfolio/static/media/BW9.1af9a38c2cca45105e21.jpg",
     "static/media/BW10.jpg": "/Portfolio/static/media/BW10.371c0bc154689a750466.jpg",
     "static/media/Stock-Plotter-Project.png": "/Portfolio/static/media/Stock-Plotter-Project.ccadc780935ee1c4ee5a.png",
+    "static/media/FullStackPromoImage.gif": "/Portfolio/static/media/FullStackPromoImage.74b8a8e3e7d167b62d9a.gif",
     "static/media/CCPPasswordGenerator.png": "/Portfolio/static/media/CCPPasswordGenerator.53a58ad733d6cc40bb69.png",
     "static/media/link.png": "/Portfolio/static/media/link.fe02f2d156b2d7dfc367.png",
     "static/media/GitHub.png": "/Portfolio/static/media/GitHub.932752fbabe9c64eb2e2.png",
@@ -53,11 +54,11 @@
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.a31ce073b575b0fe882b.png",
     "index.html": "/Portfolio/index.html",
     "main.e9ad83e4.css.map": "/Portfolio/static/css/main.e9ad83e4.css.map",
-    "main.a250d9bb.js.map": "/Portfolio/static/js/main.a250d9bb.js.map",
+    "main.969721b3.js.map": "/Portfolio/static/js/main.969721b3.js.map",
     "453.8530122b.chunk.js.map": "/Portfolio/static/js/453.8530122b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9ad83e4.css",
-    "static/js/main.a250d9bb.js"
+    "static/js/main.969721b3.js"
   ]
 }
